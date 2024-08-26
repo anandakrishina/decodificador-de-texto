@@ -1,0 +1,129 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+
+    --primary-color: #0A3871; 
+    --hover-primary: #041730;
+    --secundary-color: #495057; 
+    --desativado-color: #D8DFE8;
+    --hover-secundary: #383c41;
+    --backgroud-primary: #F3F5FC; 
+    --backgroud-secundary: #ffffff; 
+    --gray-500: #000000; 
+  }
+  
+
+body{
+    background: var(--backgroud-primary);
+    font-family: "Inter", sans-serif;
+    box-sizing: border-box;
+    height: 100vh;
+}
+
+header{
+    padding: 30px;
+    background-color: #cfe1f7;
+}
+
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 40px; 
+}
+
+.pergunta{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: var(--primary-color);
+}
+
+#tituloResposta{
+    font-size: 30px;
+}
+
+h3{
+    font-size: 30px;
+}
+
+p{
+    font-size: 20px;
+}
+
+.resposta{
+    background-color: var(--backgroud-secundary);
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+.textoResposta{
+    text-align: center;
+    max-width: 500px;
+}
+
+
+.botoes{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 39px;
+    justify-content: center;
+}
+
+button{
+    width: 220px;
+    padding: 16px;
+    border-radius: 16px;
+    font-size: 16px;
+    background-color: var(--desativado-color);
+    color: var(--primary-color);
+    margin-top: 30px;
+}
+
+button:hover{
+    background-color: var(--backgroud-secundary);
+}
+
+.botaoCriptografar{
+    background-color: var(--primary-color);
+    color: var(--backgroud-primary);
+}
+
+.botaoCriptografar:hover{
+    background-color: var(--hover-primary);
+}
+
+.botaoDescriptografar{
+    background-color: var(--desativado-color);
+    color: var(--primary-color);
+}
+
+.botaoDescriptografar:hover{
+    background-color: var(--backgroud-secundary);
+}
+
+.recado{
+    font-size: 13px;
+}
+
+textarea{
+    width: auto;
+    height: 200px;
+    resize: none;
+    background-color: var(--backgroud-secundary);
+    border: none;
+    border-radius: 30px;
+    color: var(--primary-color);
+    font-family: "Inter", sans-serif;
+    font-size: 20px;
+    padding: 30px;
+}
+
